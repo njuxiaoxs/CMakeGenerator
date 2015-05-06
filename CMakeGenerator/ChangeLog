@@ -1,0 +1,48 @@
+2014-10-28 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Added references to the ChangeLog files in the generated
+	  projects. So they would show up in Xcode.
+	* Tagging as CMakeGenerator-00-00-06
+
+2014-10-27 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Trying to make the script a little smarter. So that CodeBlocks
+	  could be used on SLC6 with this smart setup. (Not so easy
+	  to do...)
+	* Tagging as CMakeGenerator-00-00-05
+
+2014-10-09 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Fixed a stupid typo.
+	* Tried turning on all warnings for Xcode, but unsuccessfully
+	  so far. :-(
+	* Made the (selection.)xml files appear in Xcode.
+	* Tagging as CMakeGenerator-00-00-04
+
+2014-10-09 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Increased the required cmake version to 2.8.12. As it turns out,
+	  some of the commands used by the code only appeared in that
+	  version.
+	* Fixed an issue in the library name list handling.
+	* Added proper compilation options for the package executables.
+	* Added some more explicit error handling to getWorkDir().
+	* Tagging as CMakeGenerator-00-00-03
+
+2014-10-08 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Made the code aware of source files under util/ and test/ in
+	  the packages. So that these would show up in the IDE as well.
+	* Made the outputs a bit less verbose.
+	* Tried to make the code smarter wrt. packages that don't compile
+	  shared libraries. But this is not tested yet.
+	* Tagging as CMakeGenerator-00-00-02
+
+2014-10-07 Attila Krasznahorkay <Attila.Krasznahorkay@cern.ch>
+	* Made a first stab at generating a functional CMake project
+	  file from a configured RootCore test area.
+	* The project file that the code generates at the moment can be
+	  used to compile the library sources in RootCore packages
+	  successfully. It doesn't mean that the code would produce
+	  functional libraries however. For instance I don't want/need
+	  to teach CMake how to generate ROOT dictionaries. The point
+	  is to use CMake in turn to generate project files for an IDE
+	  that can be used for code development. While still building
+	  the packages for production use with RootCore.
+	* The results look very promising on MacOS X 10.9 with Xcode!
+	* Tagging as CMakeGenerator-00-00-01
