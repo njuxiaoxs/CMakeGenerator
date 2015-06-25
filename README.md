@@ -1,3 +1,5 @@
+copy from https://svnweb.cern.ch/cern/wsvn/atlas-krasznaa/AODUpgrade/CMakeGenerator/trunk/
+
 git clone https://github.com/njuxiaoxs/CMakeGenerator.git
 
 mkdir IDE
